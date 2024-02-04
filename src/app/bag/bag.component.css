@@ -1,0 +1,28 @@
+.bagProductRow {
+    display: flex;
+    margin-bottom: 10px; 
+    max-height: 10rem; 
+    overflow: hidden; 
+    border: 2px solid black;
+}
+
+.productDetails {
+    display: flex;
+}
+
+.productimg {
+    width: 100px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    font: 1rem sans-serif;
+    margin-bottom: 6rem; 
+}
+

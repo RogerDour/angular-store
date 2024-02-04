@@ -1,0 +1,11 @@
+<div *ngFor="let product of storeService.menProducts">
+    <img class="productimg" [src]="product.image" [alt]="product.name">
+    <p>{{product.name}} - {{product.price}}₪</p>
+    <div *ngFor="let size of product.size"> {{size}} </div>
+
+    <button (click)="storeService.addToBag(product)" [disabled]="!(product.inStock)">Add to bag</button>
+    <div class="notInStock" *ngIf="!(product.inStock)">
+        <p>Not in Stock !!!</p> 
+     </div>
+
+</div>

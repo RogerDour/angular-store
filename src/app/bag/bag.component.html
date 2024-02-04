@@ -1,0 +1,14 @@
+<div *ngFor="let product of storeService.bagProducts" class="bagProductRow">
+    <div class="productDetails">
+        <img class="productimg" [src]="product.image" [alt]="product.name">
+        <div class="details">
+            <p>{{product.name}}</p>
+            <p>{{product.price}}$</p>
+        </div>
+    </div>
+    
+</div>
+<div class="price">
+    <p>Total Price: {{storeService.totalPrice}} ₪</p>
+    <p *ngIf="storeService.totalPrice > 50">You get free shipping!!!!</p>
+</div>

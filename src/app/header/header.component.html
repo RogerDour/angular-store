@@ -1,0 +1,12 @@
+<div class="container">
+    <a  class="logo">Roger's Shop</a>
+    <nav>
+      <ul>
+        <li routerLinkActive="active"><a routerLink="/home">Home</a></li>
+        <li routerLinkActive="active"><a routerLink="/men">Men</a></li>
+        <li routerLinkActive="active"><a routerLink="/women">Women</a></li>
+      </ul>
+    </nav>
+    <a routerLinkActive="active" routerLink="/bag"> <img class="bag" src="assets/images/shopping-bag.png" alt="">{{storeService.bagProducts.length}}</a>
+  </div>
+
